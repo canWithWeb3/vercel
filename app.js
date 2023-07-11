@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }))
 
 app.use("/", (req, res) => {
-    res.send("indexo")
+    res.render("index")
 })
 
 app.listen(3000, function() {

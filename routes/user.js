@@ -1,6 +1,8 @@
-const express = require("express")
-const app = express.Router()
+const express = require("express");
+const router = express.Router();
 
-app.get("/", (req, res) => {
-    res.send("routes starting")
+router.get("/", (req, res) => {
+    return res.render("user");
 })
+
+module.exports = router;

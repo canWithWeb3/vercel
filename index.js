@@ -6,7 +6,7 @@ app.set("views", "./views")
 app.set("view engine", "ejs")
 
 app.use("/", (req, res) => {
-    res.send("users/user asd")
+    res.render("users/user")
 })
 
 app.listen(3000, function() {

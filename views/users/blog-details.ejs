@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body>
+    
+    <%- include("../partials/nav")  %> 
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/static/images/<%= blog.resim %>" class="img-fluid rounded-4" alt="">
+            </div>
+            <div class="col-md-8">
+                <h1 class="h3 mb-3">
+                    <%= blog.baslik %>
+                </h1>
+
+                <p><%= blog.altbaslik %></p>
+            </div>
+            <div class="col-12">
+                <hr>
+                <p><%- blog.aciklama %></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

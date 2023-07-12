@@ -2,7 +2,9 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    return res.render("users/user");
-})
+    res.render("users/index", {
+        title: "Bootstrap"
+    })
+});
 
 module.exports = router;
